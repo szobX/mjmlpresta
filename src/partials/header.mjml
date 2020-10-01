@@ -1,15 +1,17 @@
 <mj-head>
-    <mj-title>${{ lang.message_from_shop_name }}$</mj-title>
+    <mj-title></mj-title>
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
     <mj-attributes>
-        <mj-text font-family="Open-sans, Helvetica, Arial, sans-serif" color="#555454" />
-        <mj-class name="body" background-color="#f5f5f5" padding="20px 0px" width="650px" />
-        <mj-class name="divider" border-color="#555454"/>
-        <mj-class name="section" background-color="white" padding="20px" />
-        <mj-class name="background-hero" background-color="#fafafa" />
-        <mj-class name="title-hero" padding="15px 15px 5px 15px" font-size="20px" />
-        <mj-class name="title-divider-hero" border-color="#555454" border-width="1px" padding="0px 15px 15px" />
-        <mj-class name="title" align="center" padding="5px" font-size="28px" line-height="30px" text-transform="uppercase" />
-        <mj-class name="subtitle" align="center" padding="5px" font-size="16px" />
-        <mj-text padding="2px 15px" />
+      <mj-all font-family="Poppins" />
+      <mj-text font-size="16px" line-height="26px" />
+      <mj-section background-color="#FFF" padding="20px 30px" />
+      <mj-class name="aqua" color="#001934" />
+      <mj-class name="blue" color="#1085E7" />
+      <mj-class name="bold" font-weight="600" />
+
+      <mj-class name="aquaLight" color="#012E48" font-weight="400" />
+      <mj-class name="title" font-size="16px" font-weight="600" text="center" />
+
+    
     </mj-attributes>
-</mj-head>
+  </mj-head>
