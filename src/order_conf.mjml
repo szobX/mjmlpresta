@@ -1,136 +1,150 @@
 <mjml>
-    <mj-include path="./src/partials/header.mjml" />
-    <mj-body>
-        <mj-container mj-class="body">
+  <mj-include path="./src/partials/header.mjml" />
+  <mj-body background-color="white" border-width="2px" border-color="#DCDCDC">
+    <mj-container mj-class="body">
 
-            <mj-spacer height="25px" />
+      <mj-column width="20%" vertical-align="middle">
+        <mj-image width="100px" src="http://staging.aquaray.saas.hqhost.pl/img/logo_dark.jpg" />
+      </mj-column>
+      <mj-column width="80%" vertical-align="middle">
+        <mj-text mj-class="aqua title">
+          IMPORTER I DYSTRYBUTOR PROFESJONALNYCH PRODUKTÓW AKWARYSTYCZNYCH
+        </mj-text>
+      </mj-column>
 
-            <mj-section mj-class="section">
-                <mj-column width="100%">
+      <mj-section mj-class="section">
 
-                    <mj-include path="./src/partials/logo.mjml" />
+        <mj-column padding-top="38px" width="100%">
+          <mj-text mj-class="aquaLight">
+            Dzień Dobry, {company}<br />
 
-                    <mj-text mj-class="title">${{ lang.hi_firstname_lastname }}$</mj-text>
-                    <mj-text mj-class="subtitle">${{ lang.thank_you_for_shopping_with_shop_name }}$</mj-text>
-                </mj-column>
-            </mj-section>
+            ${{ lang.thank_you_for_shopping_with_shop_name }}$
+          </mj-text>
+        </mj-column>
+        <mj-column width="100%" padding-bottom="10px">
+      </mj-section>
 
-            <mj-section mj-class="section">
-                <mj-column mj-class="background-hero">
-                    <mj-text mj-class="title-hero">${{ lang.order_details }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
-                    <mj-text><strong>${{ lang.order }}$</strong> {order_name} ${{ lang.placed_on }}$ {date}</mj-text>
-                    <mj-text padding-bottom="15px"><strong>${{ lang.payment }}$</strong> {payment}</mj-text>
-                </mj-column>
-            </mj-section>
+      <mj-section mj-class="section">
+        <mj-column mj-class="background-hero">
+          <mj-text mj-class="title-hero">${{ lang.order_details }}$</mj-text>
+          <mj-divider mj-class="title-divider-hero"></mj-divider>
+          <mj-text><strong>${{ lang.order }}$</strong> {order_name} ${{ lang.placed_on }}$ {date}</mj-text>
+          <mj-text padding-bottom="15px"><strong>${{ lang.payment }}$</strong> {payment}</mj-text>
+        </mj-column>
+      </mj-section>
 
-            <mj-section mj-class="section">
-                <mj-column>
-                    <mj-html>
-                    <table class="table table-recap" padding="0" bgcolor="#f8f8f8" style="width:100%;border-collapse:collapse;font-family:Open-sans, Helvetica, Arial, sans-serif;" role="presentation">
-                        <tr>
-                            <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.reference }}$</th>
-                            <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.product }}$</th>
-                            <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.unit_price }}$</th>
-                            <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.quantity }}$</th>
-                            <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.total_price }}$</th>
-                        </tr>
-                        <tr>
-                            <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
-                                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
-                                    {products}
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" style="border:1px solid #D6D4D4; border-top: none;padding:0 7px;" align="center">
-                                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
-                                    {discounts}
-                                </table>
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.products }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                {total_products}
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.discounts }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                {total_discounts}
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.giftwrapping }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                {total_wrapping}
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.shipping }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                {total_shipping}
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.total_tax_paid }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                {total_tax_paid}
-                            </td>
-                        </tr>
-                        <tr align="right">
-                            <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
-                                <strong>${{ lang.total_paid }}$</strong>
-                            </td>
-                            <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
-                                <strong>{total_paid}</strong>
-                            </td>
-                        </tr>
-                    </table>
-                    <mj-html>
-                </mj-column>
-            </mj-section>
+      <mj-section mj-class="section">
+        <mj-column>
+          <mj-html>
+            <table class="table table-recap" padding="0" bgcolor="#f8f8f8" style="width:100%;border-collapse:collapse;font-family:Open-sans, Helvetica, Arial, sans-serif;" role="presentation">
+              <tr>
+                <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.product }}$</th>
+                <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.unit_price }}$</th>
+                <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.quantity }}$</th>
+                <th style="border:1px solid #D6D4D4;padding: 10px;">${{ lang.total_price }}$</th>
+              </tr>
+              <tr>
+                <td colspan="5" style="border:1px solid #D6D4D4; border-bottom: none; padding:7px 7px 0 7px;" align="center">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                    {products}
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="border:1px solid #D6D4D4; border-top: none;padding:0 7px;" align="center">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0" class="table-list">
+                    {discounts}
+                  </table>
+                </td>
+              </tr>
+              <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                  <strong>${{ lang.products }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                  {total_products}
+                </td>
+              </tr>
+              <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                  <strong>${{ lang.discounts }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                  {total_discounts}
+                </td>
+              </tr>
 
-            <mj-section mj-class="section">
-                <mj-column mj-class="background-hero">
-                    <mj-text mj-class="title-hero">${{ lang.shipping }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
-                    <mj-text padding-bottom="15px"><strong>${{ lang.carrier }}$</strong> {carrier}</mj-text>
-                </mj-column>
-            </mj-section>
+              <tr align="right">
+                <td colspan="4" style="border:1px solid #D6D4D4;padding:7px;">
+                  <strong>${{ lang.total_paid }}$</strong>
+                </td>
+                <td colspan="1" style="border:1px solid #D6D4D4;padding:7px;color:#777;">
+                  <strong>{total_paid}</strong>
+                </td>
+              </tr>
+            </table>
+            <mj-html>
+        </mj-column>
+      </mj-section>
 
-            <mj-section mj-class="section">
-                <mj-column mj-class="background-hero" width="48%">
-                    <mj-text mj-class="title-hero">${{ lang.delivery_address }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
-                    <mj-text padding-bottom="15px">{delivery_block_html}</mj-text>
-                </mj-column>
-                <mj-column width="4%">
-                    <mj-spacer height="20px" />
-                </mj-column>
-                <mj-column mj-class="background-hero" width="48%">
-                    <mj-text mj-class="title-hero">${{ lang.billing_address }}$</mj-text>
-                    <mj-divider mj-class="title-divider-hero"></mj-divider>
-                    <mj-text padding-bottom="15px">{invoice_block_html}</mj-text>
-                </mj-column>
-            </mj-section>
+      <mj-section mj-class="section">
+        <mj-column mj-class="background-hero">
+          <mj-text mj-class="title-hero">${{ lang.shipping }}$</mj-text>
+          <mj-divider mj-class="title-divider-hero"></mj-divider>
+          <mj-text padding-bottom="15px"><strong>${{ lang.carrier }}$</strong> {carrier}</mj-text>
+        </mj-column>
+      </mj-section>
 
-            <mj-include path="./src/partials/account.mjml" />
+      <mj-section mj-class="section">
+        <mj-column mj-class="background-hero" width="48%">
+          <mj-text mj-class="title-hero">${{ lang.delivery_address }}$</mj-text>
+          <mj-divider mj-class="title-divider-hero"></mj-divider>
+          <mj-text padding-bottom="15px">{delivery_block_html}</mj-text>
+        </mj-column>
+        <mj-column width="4%">
+          <mj-spacer height="20px" />
+        </mj-column>
+        <mj-column mj-class="background-hero" width="48%">
+          <mj-text mj-class="title-hero">${{ lang.billing_address }}$</mj-text>
+          <mj-divider mj-class="title-divider-hero"></mj-divider>
+          <mj-text padding-bottom="15px">{invoice_block_html}</mj-text>
+        </mj-column>
+      </mj-section>
 
-            <mj-include path="./src/partials/guest_to_customer.mjml" />
+      <mj-include path="./src/partials/account.mjml" />
 
-            <mj-include path="./src/partials/footer.mjml" />
-        </mj-container>
-    </mj-body>
+      <mj-include path="./src/partials/guest_to_customer.mjml" />
+
+          <!-- Footer -->
+    <mj-section>
+
+      <mj-column>
+        <mj-text mj-class="aquaLight">
+          AQUARAY Hurtownia Akwarystyczna ul. Spółdzielcza 1, 78-300 Świdwin
+          NIP: PL 6721992035
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          Nr telefonu:
+          <a href="mailto: hurt@aquaray.pl" style="font-weight:400;  color:#012E48; text-decoration: none"> 515164361</a>
+
+
+        </mj-text>
+
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          E-mail:
+          <a href="mailto: hurt@aquaray.pl" style=" font-weight:400; color:#012E48; text-decoration: none">hurt@aquaray.pl</a>
+        </mj-text />
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          Strona:
+          <a href="http://www.aquaray.pl/" style="font-weight:400; color:#012E48;text-decoration: none">www.aquaray.pl</a>
+        </mj-text />
+
+
+      </mj-column>
+    </mj-section>
+    <!-- END: Footer -->
+    </mj-container>
+  </mj-body>
 </mjml>

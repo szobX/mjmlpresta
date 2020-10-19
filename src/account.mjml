@@ -1,8 +1,8 @@
 <!-- Header -->
 <mjml>
-    <mj-include path="./src/partials/header.mjml" />
+  <mj-include path="./src/partials/header.mjml" />
 
-  <mj-body  border-width="2px" border-color="#DCDCDC">
+  <mj-body background-color="white" border-width="2px" border-color="#DCDCDC">
     <mj-section>
       <mj-column width="20%" vertical-align="middle">
         <mj-image width="100px" src="http://staging.aquaray.saas.hqhost.pl/img/logo_dark.jpg" />
@@ -14,14 +14,14 @@
       </mj-column>
 
       <mj-column padding-top="38px" width="100%">
-        <mj-text  mj-class="aquaLight">
-          Dzień Dobry,<br />
-         
-            Twoje konto zostało stworzone.czeka na akceptacje test..
+        <mj-text mj-class="aquaLight">
+          Dzień Dobry, {company}<br />
+
+          Twoje konto zostało stworzone.czeka na akceptacje.
         </mj-text>
       </mj-column>
       <mj-column width="100%" padding-bottom="10px">
-       
+
 
       </mj-column>
       <!-- END: Header -->
@@ -30,15 +30,37 @@
     </mj-section>
 
     <mj-section>
-      <mj-column>
-        <mj-divider border-width="1px" border-color="#DCDCDC" />
-      </mj-column />
+
     </mj-section>
 
     <!-- Footer -->
     <mj-section>
 
-          <mj-include path="./src/partials/footer.mjml" />
+      <mj-column>
+        <mj-text mj-class="aquaLight">
+          AQUARAY Hurtownia Akwarystyczna ul. Spółdzielcza 1, 78-300 Świdwin
+          NIP: PL 6721992035
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          Nr telefonu:
+          <a href="mailto: hurt@aquaray.pl" style="font-weight:400;  color:#012E48; text-decoration: none"> 515164361</a>
+
+
+        </mj-text>
+
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          E-mail:
+          <a href="mailto: hurt@aquaray.pl" style=" font-weight:400; color:#012E48; text-decoration: none">hurt@aquaray.pl</a>
+        </mj-text />
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          Strona:
+          <a href="http://www.aquaray.pl/" style="font-weight:400; color:#012E48;text-decoration: none">www.aquaray.pl</a>
+        </mj-text />
+
+
+      </mj-column>
     </mj-section>
     <!-- END: Footer -->
   </mj-body>

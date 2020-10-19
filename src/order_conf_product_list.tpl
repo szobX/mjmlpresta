@@ -1,10 +1,6 @@
 {foreach $list as $product}
     <tr>
-        <td style="padding: 10px 0;" width="18%">
-            <font size="2" face="Arial, sans-serif" color="#919191">
-                <p style="margin: 0; padding: 0 5px; font-size: 14px">{$product['reference']}</p>
-            </font>
-        </td>
+      
         <td style="padding: 10px 0;" width="37%">
             <font size="2" face="Arial, sans-serif" color="#919191">
                 <p class="name-product" style="margin: 0; padding: 0 5px; font-size: 14px; color: #919191; font-weight: bold;">{$product['name']}
