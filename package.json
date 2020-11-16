@@ -4,6 +4,9 @@
   "description": "PrestaShop emails SDK",
   "main": "index.js",
   "scripts": {
+    "build": " gulp build",
+    "watch": "gulp watch",
+    "langs": "gulp langs:dl",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PrestaShop",

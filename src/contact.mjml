@@ -1,5 +1,23 @@
 <mjml>
-  <mj-include path="./src/partials/header.mjml" />
+  <mj-head>
+    <mj-title></mj-title>
+    <mj-font
+      name="Poppins"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Poppins" />
+      <mj-text font-size="16px" line-height="26px" />
+      <mj-section background-color="#FFF" padding="20px 30px" />
+      <mj-class name="aqua" color="#001934" />
+      <mj-class name="blue" color="#1085E7" />
+      <mj-class name="bold" font-weight="600" />
+
+      <mj-class name="aquaLight" color="#012E48" font-weight="400" />
+      <mj-class name="title" font-size="16px" font-weight="600" text="center" />
+    </mj-attributes>
+  </mj-head>
+
   <mj-body>
     <mj-container mj-class="body">
       <mj-spacer height="25px" />
