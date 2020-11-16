@@ -1,10 +1,8 @@
+<!-- Header -->
 <mjml>
   <mj-head>
     <mj-title></mj-title>
-    <mj-font
-      name="Poppins"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    />
+    <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" />
     <mj-attributes>
       <mj-all font-family="Poppins" />
       <mj-text font-size="16px" line-height="26px" />
@@ -15,39 +13,75 @@
 
       <mj-class name="aquaLight" color="#012E48" font-weight="400" />
       <mj-class name="title" font-size="16px" font-weight="600" text="center" />
+
+
     </mj-attributes>
   </mj-head>
 
-  <mj-body>
-    <mj-container mj-class="body">
-      <mj-spacer height="25px" />
+  <mj-body background-color="white" border-color="#DCDCDC">
 
-      <mj-section mj-class="section">
-        <mj-column width="100%">
-          <mj-include path="./src/partials/logo.mjml" />
+    <mj-include path="__dirname/../src/partials/slogan.mjml" />
 
-          <mj-text mj-class="title"
-            >${{ lang.message_from_a_shop_name_customer }}$</mj-text
-          >
-        </mj-column>
-      </mj-section>
 
-      <mj-section mj-class="section">
-        <mj-column mj-class="background-hero">
-          <mj-text padding="15px 15px 2px" font-weight="bold"
-            >${{ lang.message }}$</mj-text
-          >
-          <mj-text>{message}</mj-text>
-          <mj-spacer height="20px" />
-          <mj-text><b>${{ lang.order_id }}$</b> {order_name}</mj-text>
-          <mj-text><b>${{ lang.product }}$</b> {product_name}</mj-text>
-          <mj-text padding-bottom="15px"
-            ><b>${{ lang.attached_file }}$</b> {attached_file}</mj-text
-          >
-        </mj-column>
-      </mj-section>
+  <mj-section>
+ <mj-column width="60px" vertical-align="middle">
+        <mj-image padding="0" width="200px" src="http://staging.aquaray.saas.hqhost.pl/img/logo_dark.jpg">
+        </mj-image>
+      </mj-column>
+      <mj-column width="460px" vertical-align="middle">
+        <mj-text mj-class="aqua title">
+          IMPORTER I DYSTRYBUTOR PROFESJONALNYCH PRODUKTÓW AKWARYSTYCZNYCH
+        </mj-text>
+      </mj-column>
+  </mj-section>
 
-      <mj-include path="./src/partials/footer.mjml" />
-    </mj-container>
+
+
+  
+    <mj-section>     
+      <mj-column    width="100%">
+        <mj-text mj-class="aquaLight">
+          Dzień Dobry, {company}<br /> Kontakt
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%" padding-bottom="10px">
+      <!-- END: Header -->
+      <!-- Header content -->
+      <!-- END: Header content -->
+    </mj-section>
+
+    <mj-section>
+
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section>
+
+      <mj-column>
+        <mj-text mj-class="aquaLight">
+          AQUARAY Hurtownia Akwarystyczna ul. Spółdzielcza 1, 78-300 Świdwin NIP: PL 6721992035
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          Nr telefonu:
+          <a href="mailto: hurt@aquaray.pl" style="font-weight:400;  color:#012E48; text-decoration: none"> 515164361</a>
+
+
+        </mj-text>
+
+        <mj-text padding-bottom="0px" mj-class="blue bold">
+          E-mail:
+          <a href="mailto: hurt@aquaray.pl" style=" font-weight:400; color:#012E48; text-decoration: none">hurt@aquaray.pl</a>
+          </mj-text />
+          <mj-text padding-bottom="0px" mj-class="blue bold">
+            Strona:
+            <a href="http://www.aquaray.pl/" style="font-weight:400; color:#012E48;text-decoration: none">www.aquaray.pl</a>
+            </mj-text />
+
+
+      </mj-column>
+    </mj-section>
+    <!-- END: Footer -->
   </mj-body>
 </mjml>

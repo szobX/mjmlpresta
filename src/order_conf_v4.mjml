@@ -21,7 +21,7 @@
       <mj-text mj-class="aqua title">IMPORTER I DYSTRYBUTOR PROFESJONALNYCH PRODUKTÓW AKWARYSTYCZNYCH</mj-text>
     </mj-column>
     <mj-section mj-class="section">
-      <mj-column padding-top="38px" width="100%">
+      <mj-column    width="100%">
         <mj-text mj-class="aquaLight">Dzień Dobry, {company}<br />
 
           ${{ lang.thank_you_for_shopping_with_shop_name }}$</mj-text>
