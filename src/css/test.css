@@ -31,7 +31,7 @@ th {
 }
 
 table.table-list {
-  font-family: Arial !important;
+  /* font-family: Arial !important; */
 }
 table.table-list tr {
   background-color: #f8f8f8 !important;
